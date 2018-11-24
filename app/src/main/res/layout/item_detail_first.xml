@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_detail_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="2sp"
+        android:text="第 1 章 导论"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <ListView
+        android:id="@+id/lv_detail_second"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        />
+
+
+</LinearLayout>
