@@ -214,7 +214,18 @@ public class DetailActivity extends AppCompatActivity {
                 //lv_detail_second .setVerticalScrollBarEnabled(false);
                 ListAdapterSecond adapterSecond = new ListAdapterSecond(position);
                 lv_detail_second.setAdapter(adapterSecond);
+                if (info.getCourses().get(superid).getChapters().get(0).getChapters().get(position).getChapters()==null)
+                {
+                    lv_detail_second.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                            Intent intent = new Intent(DetailActivity.this, VideoActivity.class);
+                            startActivity(intent);
 
+                        }
+                    });
+
+                }
                 return convertView;
             }
         }
